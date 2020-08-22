@@ -1,0 +1,170 @@
+body {
+  background: url(../images/bg.jpg) repeat;
+}
+
+.header-font {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.contact-heading {
+  font-weight: 300;
+  font-size: 3.2rem;
+}
+.contact-heading2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.contact-paragraph {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+/*=============================================================
+						INDEX PAGE
+===============================================================*/
+/* Slider Section */
+.carousel-item {
+  height: auto;
+  position: relative;
+}
+
+.text {
+  /* background-color: brown; */
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* mix-blend-mode: multiply; */
+}
+
+/* Bus Preview Section */
+#bus-preview img {
+  height: 200px;
+}
+
+/*=============================================================
+					TICKET BOOKING PAGE
+===============================================================*/
+#regForm {
+  min-width: 300px;
+}
+/* Progressbar */
+#result {
+  display: none;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  display: inline-block;
+  opacity: 0.5;
+  border: 0;
+  border-radius: 0;
+  transition: all .3s ease-in-out;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #328823;
+  opacity: 1;
+}
+
+.seatbutton {
+  width: 50px;
+  height: 50px;
+}
+
+.extraSeat {
+  font-size: .9rem;
+}
+
+hr {
+  border: solid .1rem #444;
+}
+
+.seat {
+  border: solid 1px #444;
+  padding: .5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+@media (max-width: 576px) {
+  .mobile-column {
+    /* width: 70%; */
+    margin: 0px;
+  }
+  .step p {
+    font-size: .9rem;
+  }
+  .step{
+    height: 52px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact-heading {
+    font-size: 2.2rem;
+  }
+
+  .seat {
+    border: solid 1px #444;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .seatbutton {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .seatbutton {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .step p {
+    font-size: .9rem;
+    margin-bottom: 0 !important;
+  }
+
+  .seatbutton {
+    width: 40px;
+    height: 40px;
+  }
+}
